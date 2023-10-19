@@ -22,7 +22,7 @@ public class Main {
 
             switch (escolha) {
                 case 1:
-                    calculadora.somar();
+                    calculadora.questao39();
                     break;
                 case 2:
                     calculadora.subtrair();

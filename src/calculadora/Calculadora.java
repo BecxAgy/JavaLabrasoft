@@ -36,5 +36,28 @@ public class Calculadora {
 
     }
 
+    public void questao39(){
+        int numA = 4870;
+        int[] digitos = new int[4];
+        int fator = 2;
+        int soma = 0;
+
+        for (int i = 3; i >= 0; i--)
+        {
+            digitos[i] = numA % 10;
+            numA /= 10;
+
+            digitos[i] *= fator;
+            fator++;
+
+            soma += digitos[i];
+
+        }
+        int digitofinal = 11-(soma % 11) ;
+        System.out.println(digitofinal);
+
+    }
+
+
 
 }

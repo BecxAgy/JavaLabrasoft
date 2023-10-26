@@ -24,18 +24,6 @@ public class Calculadora {
 
     }
 
-    public  void subtrair(){
-
-    }
-
-    public  void multiplicar(){
-
-    }
-
-    public void dividir(){
-
-    }
-
     public void questao39(){
         int numA = 4870;
         int[] digitos = new int[4];
@@ -58,6 +46,56 @@ public class Calculadora {
 
     }
 
+    public void  restoDivisao(){
+        int dividendo = 43;
+        int divisor = 5;
+        int resto = 0;
 
+        while(dividendo >= divisor) {
+            resto = dividendo - divisor;
+            dividendo -= divisor;
+        }
+
+        System.out.println(resto);
+        System.out.println(43%divisor);
+
+    }
+
+    public void combinacao(){
+        int numero = 7;
+
+        int somador1, somador2;
+
+        for (somador1=1; somador1 < 7; somador1++){
+
+            for(somador2 = 7; somador2 >0; somador2--){
+
+                if(somador2 + somador1 == numero){
+                    System.out.println(somador1 + " + " + somador2
+                    );
+                }
+            }
+        }
+    }
+    public void triangular(){
+        int num = 21;
+        int mult2, mult3;
+        int triangular = 0;
+        for(int mult1 = 1 ; mult1 <= num ;mult1++){
+
+            mult2 = mult1 +1;
+            mult3 = mult1+2;
+            if((mult1*mult2*mult3) == num ){
+                        triangular = 1;
+            }
+
+
+        }
+        System.out.println(triangular);
+    }
+
+    public void goldbach(){
+
+    }
 
 }

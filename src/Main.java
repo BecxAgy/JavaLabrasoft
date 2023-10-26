@@ -12,9 +12,9 @@ public class Main {
         while (continuar) {
             System.out.println("Escolha uma operação:");
             System.out.println("1. Somar");
-            System.out.println("2. Subtrair");
-            System.out.println("3. Multiplicar");
-            System.out.println("4. Dividir");
+            System.out.println("2. triangular");
+            System.out.println("3. Combinacao");
+            System.out.println("4. resto");
             System.out.println("5. Sair");
 
             System.out.print("Opção: ");
@@ -25,13 +25,13 @@ public class Main {
                     calculadora.questao39();
                     break;
                 case 2:
-                    calculadora.subtrair();
+                    calculadora.triangular();
                     break;
                 case 3:
-                    calculadora.multiplicar();
+                    calculadora.combinacao();
                     break;
                 case 4:
-                    calculadora.dividir();
+                    calculadora.restoDivisao();
                     break;
                 case 5:
                     continuar = false;
